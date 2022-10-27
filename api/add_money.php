@@ -18,7 +18,7 @@
             $current_balance = $row["balance"];
             $current_balance = $current_balance + $balance;
 
-            $sql2 = "UPDATE logindetails set balance='$current_balance' where username='$username'";
+            $sql2 = "UPDATE logindetails set balance='$current_balance' where userId='$username'";
             $result = mysqli_query($con, $sql2);  
             echo "<h1>Balance updated! New balance is: '$current_balance'</h1>";
         }  

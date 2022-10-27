@@ -1,7 +1,7 @@
 <?php      
     include('connection.php');  
-    $username = $_POST['User'];  
-    $password = $_POST['Pass'];  
+    $username = $_POST['user'];  
+    $password = $_POST['pass'];  
       
         //to prevent from mysqli injection  
         $username = stripcslashes($username);  

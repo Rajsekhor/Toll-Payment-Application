@@ -1,0 +1,72 @@
+body{
+    margin:0 ;
+    padding: 0;
+    display: flex;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    width:100vw;
+    height: 50px;
+    box-shadow: 0 0 10px black;
+    position: fixed;
+    background: rgb(115,107,255);
+background: linear-gradient(90deg, rgba(115,107,255,1) 0%, rgba(166,166,215,1) 35%, rgba(0,212,255,1) 100%);
+    margin:0;
+}
+
+.nav-1{
+    width: 65vw;
+    padding: 0 75px;
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-2{
+    display: flex;
+    flex-direction: row;
+    
+}
+a{
+    padding: 0 10px;
+    margin: 0 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.icon{
+    width: 30px;
+    height: 100%;
+    margin: 0 15px;
+}
+
+.home-view-1{
+    
+    margin:50px 0 0 0;
+    min-width: 100vw;
+    max-height: 100vh;
+    min-height: 50vh;
+    color: aliceblue;
+    text-align: center;
+    padding: 240px 0;
+    
+}
+
+.home-view-2{
+    color: wheat;
+    max-width: 100vw;
+    height: auto;
+    margin: 0;
+    padding: 10vh 10vw;
+    font-family: sans-serif;
+}
+
+.home-view{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-image: url("../img/home-view-1.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: inset 0 0 0 2000px #1c1c1c71;
+}

@@ -13,9 +13,9 @@
         
         if($count == 1){  
             $current_balance = $row["balance"];
-            if($current_balance >= 100){
+            if($current_balance >= 150){
                 $current_balance = $current_balance - 150;
-                $sql2 = "UPDATE logindetails set balance='$current_balance' where username='$username'";
+                $sql2 = "UPDATE logindetails set balance='$current_balance' where userId='$username'";
                 $result = mysqli_query($con, $sql2);  
                 echo "<h1>Balance updated! New balance is: '$current_balance'</h1>";
             }
