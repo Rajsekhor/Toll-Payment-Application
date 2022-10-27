@@ -4,9 +4,25 @@
     <link rel = "stylesheet" type = "text/css" href = "../assets/style.css">   
 </head>  
 <body>  
-    <div id = "frm">  
+    <!-- <div id = "frm">  
+        <h1>Sign up</h1>  
+        <form name="f1" action = "../api/register.php" onsubmit = "return validation()" method = "POST">  
+            <p>  
+                <label> UserName: </label>  
+                <input type = "text" id ="User" name  = "user" />  
+            </p>  
+            <p>  
+                <label> Password: </label>  
+                <input type = "password" id ="Pass" name  = "pass" />  
+            </p>  
+            <p>     
+                <input type =  "submit" class="btn" value = "Login" />  
+            </p>  
+        </form>  
+    </div>   -->
+    <!-- <div id = "frm">  
         <h1>Login</h1>  
-        <form name="f1" action = "../assets/authentication.php" onsubmit = "return validation()" method = "POST">  
+        <form name="f1" action = "../api/authentication.php" onsubmit = "return validation()" method = "POST">  
             <p>  
                 <label> UserName: </label>  
                 <input type = "text" id ="user" name  = "user" />  
@@ -16,7 +32,23 @@
                 <input type = "password" id ="pass" name  = "pass" />  
             </p>  
             <p>     
-                <input type =  "submit" id = "btn" value = "Login" />  
+                <input type =  "submit" class="btn" value = "Login" />  
+            </p>  
+        </form>  
+    </div>   -->
+    <div id = "frm">  
+        <h1>Login</h1>  
+        <form name="f1" action = "../api/add_money.php" onsubmit = "return validation2()" method = "POST">  
+            <p>  
+                <label> UserName: </label>  
+                <input type = "text" id ="user" name  = "user" />  
+            </p>  
+            <p>  
+                <label> Add to balance: </label>  
+                <input type = "password" id ="balance" name  = "balance" />  
+            </p>  
+            <p>     
+                <input type =  "submit" class="btn" value = "Login" />  
             </p>  
         </form>  
     </div>  
@@ -37,6 +69,26 @@
                     }   
                     if (ps.length=="") {  
                     alert("Password field is empty");  
+                    return false;  
+                    }  
+                }                             
+            }  
+            function validation2()  
+            {  
+                var id=document.f1.user.value;  
+                var bs=document.f1.balance.value;  
+                if(id.length=="" && ps.length=="") {  
+                    alert("User Name and Balance fields are empty");  
+                    return false;  
+                }  
+                else  
+                {  
+                    if(id.length=="") {  
+                        alert("User Name is empty");  
+                        return false;  
+                    }   
+                    if (bs.length=="") {  
+                    alert("Balance field is empty");  
                     return false;  
                     }  
                 }                             
