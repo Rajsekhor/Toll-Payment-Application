@@ -9,7 +9,7 @@ body{
     background: white;  
     padding: 50px;  
 }  
-#btn{  
+.btn{  
     color: #fff;  
     background: #337ab7;  
     padding: 7px;  
