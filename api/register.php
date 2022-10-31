@@ -20,6 +20,7 @@
         else{  
             $sql2 = "insert into logindetails (userId,password) values ('$username','$password')";
             $result = mysqli_query($con, $sql2);  
-            echo "<h1> Sign up successful.</h1>";
+            $pdf_file_path = '../view/sign_up.html';
+            header('Location: '.$pdf_file_path) and exit; 
         }     
 ?>  

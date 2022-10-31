@@ -1,0 +1,23 @@
+.menu-view{
+    display: flex;
+    flex-direction: column;
+    margin: 100px auto;
+}
+
+.menu-btn{
+    background: rgb(31,103,231);
+    background: linear-gradient(90deg, rgba(31,103,231,1) 0%, rgba(33,33,148,1) 55%, rgba(0,212,255,1) 100%);
+    margin: 50px auto;
+    width: 250px;
+    height: 25px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: sans-serif;
+
+}
+
+.size-adj-menu{
+    width: 100vw;
+    height: 100vh;
+}

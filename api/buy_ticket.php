@@ -17,13 +17,16 @@
                 $current_balance = $current_balance - 150;
                 $sql2 = "UPDATE logindetails set balance='$current_balance' where userId='$username'";
                 $result = mysqli_query($con, $sql2);  
-                echo "<h1>Balance updated! New balance is: '$current_balance'</h1>";
+                $pdf_file_path = '../view/new_ticket.html';
+                header('Location: '.$pdf_file_path) and exit; 
             }
             else{
-                echo "<h1>Insufficient balance!</h1>";
+                $pdf_file_path = '../view/error.html';
+                header('Location: '.$pdf_file_path) and exit; 
             }
         }  
         else{  
-            echo "<h1><center> Error! User does not exist! </center></h1>";  
+            $pdf_file_path = '../view/error.html';
+            header('Location: '.$pdf_file_path) and exit; 
         }     
 ?>  

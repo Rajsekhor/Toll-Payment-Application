@@ -20,9 +20,11 @@
 
             $sql2 = "UPDATE logindetails set balance='$current_balance' where userId='$username'";
             $result = mysqli_query($con, $sql2);  
-            echo "<h1>Balance updated! New balance is: '$current_balance'</h1>";
+            $pdf_file_path = '../view/update_balance.html';
+            header('Location: '.$pdf_file_path) and exit; 
         }  
         else{  
-            echo "<h1><center> Error! User does not exist! </center></h1>";  
+            $pdf_file_path = '../view/error.html';
+            header('Location: '.$pdf_file_path) and exit; 
         }     
 ?>  
